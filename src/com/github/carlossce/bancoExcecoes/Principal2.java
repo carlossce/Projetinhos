@@ -11,12 +11,15 @@ public class Principal2 {
 
         conta1.ativar();
 
-        try {
-            conta1.depositar(1_000);
-            conta1.transferir(conta2, 500);
-        } catch (StatusDaContaException | IllegalArgumentException | SemSaldoException e) {
-            System.out.println("Erro: " + e.getMessage());
-        }
+//        try {
+//            conta1.depositar(1_000);
+//            conta1.transferir(conta2, 500);
+//        } catch (StatusDaContaException | IllegalArgumentException | SemSaldoException e) {
+//            System.out.println("Erro: " + e.getMessage());
+//        }
+
+        conta1.depositar(1_000);
+        conta1.transferir(conta2, 500);
 
         System.out.printf("Saldo da conta 1: %.2f%n", conta1.getSaldo());
         System.out.printf("Saldo da conta 2: %.2f%n", conta2.getSaldo());
