@@ -43,4 +43,5 @@ public class CaixaEletronico {
         System.out.printf("Valor da impressão: R$%.2f%n%n", TARIFA_IMPRESSAO);
         conta.sacar(TARIFA_IMPRESSAO);
     }
+
 }
