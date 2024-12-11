@@ -14,7 +14,7 @@ public class Main {
 //        cadastro.removerPorDescricao("Disney (10 noites)");
 
 //        cadastro.ordenar();
-//        cadastro.ordenarPorPrecoDecrescente();
+        cadastro.ordenarPorPrecoDecrescente();
 
 //        PacoteViagem pacoteEncontrado = cadastro.buscarPorDescricao("Disney (10 noites)");
 //        System.out.println(pacoteEncontrado);

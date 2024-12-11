@@ -45,19 +45,18 @@ public class PacoteViagem implements Comparable<PacoteViagem> {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-
         PacoteViagem that = (PacoteViagem) o;
-        return Double.compare(precoPorPessoa, that.precoPorPessoa) == 0;
+        return Objects.equals(descricao, that.descricao);
     }
 
     @Override
     public int hashCode() {
-        return Double.hashCode(precoPorPessoa);
+        return Objects.hashCode(descricao);
     }
-
+    
     @Override
     public int compareTo(PacoteViagem o) {
-        return Double.compare(precoPorPessoa, o.precoPorPessoa);
+        return getDescricao().compareTo(o.getDescricao());
     }
 
 }

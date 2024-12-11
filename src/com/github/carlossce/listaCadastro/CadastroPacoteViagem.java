@@ -19,11 +19,11 @@ public class CadastroPacoteViagem{
     }
 
     public void ordenar() {
-        Collections.sort(listaPacoteViagem, Comparator.comparing(PacoteViagem::getDescricao));
+        Collections.sort(listaPacoteViagem);
     }
 
     public void ordenarPorPrecoDecrescente() {
-        Collections.sort(listaPacoteViagem, Collections.reverseOrder());
+        Collections.sort(listaPacoteViagem, Comparator.comparing(PacoteViagem::getPrecoPorPessoa, Comparator.reverseOrder()));
     }
 
     public void removerPorDescricao(String descricao) {
