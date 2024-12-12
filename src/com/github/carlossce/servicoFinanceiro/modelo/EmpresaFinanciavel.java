@@ -1,7 +1,5 @@
 package com.github.carlossce.servicoFinanceiro.modelo;
 
-import java.io.Serializable;
-
 public abstract class EmpresaFinanciavel extends Empresa implements ClienteFinanciavel{
 
     public EmpresaFinanciavel(String razaoSocial, double totalFaturamento) {
