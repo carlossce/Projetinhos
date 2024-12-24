@@ -43,8 +43,11 @@ public class Main {
 
 //        throw new TipoDeResidenciaInvalidaException();
 
-        return cliente.getEndereco().filter(Endereco::isResidenciaPropria).flatMap(Endereco::getCidade)
-                .map(Cidade::nome).orElseThrow(TipoDeResidenciaInvalidaException::new);
+        return cliente.getEndereco()
+                .filter(Endereco::isResidenciaPropria)
+                .flatMap(Endereco::getCidade)
+                .map(Cidade::nome)
+                .orElseThrow(TipoDeResidenciaInvalidaException::new);
 
     }
 
