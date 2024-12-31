@@ -52,7 +52,6 @@ public class ServicoDeVenda {
 //            }
 //        }
 //        return maiorCodigo + 1;
-
         return vendas.stream()
                 .map(Venda::getCodigo)
                 .max(Integer::compareTo)
